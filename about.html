@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calorie Tracker - Your Personalised Health Assistant!</h1>
+    </header>
+    <div class="content">
+        <section class="personal-info-section">
+            <h2>Personal Info!</h2>
+            <div class="personal-info-container">
+                <div class="info" data-id="1"></div>
+                <div class="info" data-id="2"></div>
+                <div class="info" data-id="3"></div>
+                <div class="info" data-id="4"></div>
+            </div>
+        </section>
+        <section class="general-info-container">
+            <h2>General Info About this Website</h2>
+            <div class="general-info-box">
+                <p>This website is designed for CFS students to have a better lifestyle. It provides a platform for them
+                    to track and calculate their calorie intake aligning with their diet plan.</p>
+            </div>
+            <br>
+            <div class="general-info-box">
+                <p>This website also can give food recommendations based on the users preferences.</p>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="review">
+                <h2>Write a Review</h2>
+                <form action="#">
+                    <textarea name="review" id="review" rows="8" placeholder="Write your review here"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="map">
+                <h2>Find Us At:</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7962.753222404452!2d103.06055856151957!3d3.727802248274259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c8cc0ee30f3c87%3A0x858c9991d187b38d!2sCentre%20for%20Foundation%20Studies%2C%20International%20Islamic%20University%20Of%20Malaysia%2C%20Gambang%20Campus!5e0!3m2!1sen!2smy!4v1747296534421!5m2!1sen!2smy"
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+    <div id="popup-overlay" class="overlay hidden">
+        <div class="popup">
+            <span id="popup-close">&times;</span>
+            <div id="popup-content"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
