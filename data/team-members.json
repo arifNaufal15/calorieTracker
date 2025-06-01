@@ -26,5 +26,12 @@
         "email": "naufal@example.com",
         "bio": "Passionate about music and design.",
         "img": "pictures/sample-profile-pic.jpg"
+    },
+    "5": {
+        "name": "Muhammad Arif Naufal",
+        "matric": "243191",
+        "email": "naufal@example.com",
+        "bio": "Passionate about music and design.",
+        "img": "pictures/sample-profile-pic.jpg"
     }
 }
