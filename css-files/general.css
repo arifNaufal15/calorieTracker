@@ -37,7 +37,7 @@ button:hover{
   color: white;
 }
 
-@media(max-width: 300px){
+@media(max-width: 1000px){
   .website-layout{
     grid-template-columns: 1fr;
     row-gap: 40px;
