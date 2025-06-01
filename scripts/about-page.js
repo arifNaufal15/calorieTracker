@@ -50,7 +50,7 @@ const overlay = document.getElementById('popup-overlay');
 const popupContent = document.getElementById('popup-content');
 const popupClose = document.getElementById('popup-close');
 
-fetch("'../data/team-members.json'")
+fetch('../data/team-members.json')
     .then(response => response.json())
     .then(data => {
         const peopleData = data;
