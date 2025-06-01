@@ -54,6 +54,7 @@ fetch("/data/team-members.json")
     .then(response => response.json())
     .then(data => {
         const peopleData = data;
+        console.log(peopleData);
         for(let i = 1; i <= Object.keys(peopleData).length; i++)
         {
             personalInfoContainer.innerHTML += `<div class="info" data-id="${i}"></div>`
