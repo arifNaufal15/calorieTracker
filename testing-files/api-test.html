@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>API Testing</title>
+</head>
+<body>
+  <h1>Food Finder! (Click on the picture to see videos)</h1>
+  <input type = "text" class = "user-input">
+  <button class = "enter">Enter</button>
+
+  <div class = "info"></div>
+  <script>
+
+    document.querySelector(".enter").addEventListener('click', () => {
+      let userInput = document.querySelector(".user-input").value;
+      fetchData(userInput);
+    })
+
+    async function fetchData(userInput) {
+      try{
+        const response = await fetch (`https://www.themealdb.com/api/json/v1/1/search.php?s=${userInput}`)
+
+        if (!response.ok){
+          throw new Error("Could not fetch resources");
+        }
+
+        const data = await response.json();
+        
+        const resultDiv = document.querySelector(".info");
+        resultDiv.innerHTML = "";
+
+        data.meals.forEach(meal => {
+          const mealDiv = document.createElement("div");
+          mealDiv.className = "meal";
+          mealDiv.innerHTML = `
+          <h3>${meal.strMeal}</h3>
+          <a href = "${meal.strYoutube}">
+            <img src = "${meal.strMealThumb}">
+          </a>
+          `;
+
+          resultDiv.appendChild(mealDiv);
+        });
+
+        
+        
+      }catch(error){
+        console.error(error);
+      }
+    }
+  </script>
+</body>
+</html>
