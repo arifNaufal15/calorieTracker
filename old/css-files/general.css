@@ -36,3 +36,10 @@ button:hover{
   background-color:  #4CAF50;
   color: white;
 }
+
+@media(max-width: 1000px){
+  .website-layout{
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+}

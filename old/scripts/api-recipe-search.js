@@ -21,10 +21,6 @@ async function fetchFood(userInput) {
     if (!data.meals) {
       alert("No recipes found for your search!");
       return;  // Exit early if no results
-    
-    } else if (!userInput) {
-      alert("Please insert food name!");
-      return;
     }
     
     data.meals.forEach(meal => {

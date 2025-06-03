@@ -1,4 +1,3 @@
-//get user's information using DOM
 function getUserData (){
   const user = {
     gender: document.getElementById("gender").value,
@@ -7,15 +6,9 @@ function getUserData (){
     height: Number (document.getElementById("height").value),
     activityLevel: document.getElementById("activity-level").value
   }
-
-  document.getElementById("age").value = "";
-  document.getElementById("weight").value = "";
-  document.getElementById("height").value = "";
-
   return (user);
 }
 
-//to calculate user's calorie intake
 function calculateCalorie (){
   user = getUserData ();
   let BMR = 0;
@@ -38,7 +31,6 @@ function showCalorie(BMR){
   document.querySelector('.result').innerHTML = `${BMR.toFixed(2)} kcal`
 }
 
-//function to save result calculated
 function saveResult () {
   const resultToSave = document.querySelector('.result').innerText;
   const blob = new Blob([resultToSave], {type: 'text/plain'});
@@ -52,7 +44,6 @@ function saveResult () {
   window.URL.revokeObjectURL(link.href);
 }
 
-//addEventListener to get info when button is clicked
 document.getElementById('calculate-button').addEventListener('click', () => {
   calculateCalorie();
 });

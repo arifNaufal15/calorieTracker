@@ -36,9 +36,6 @@ function getInformation () {
     calorieValue
   });
 
-  document.getElementById("food-list").value = "";
-  document.getElementById("calorie-intake").value = "";
-
   localStorage.setItem('foodAndCalorieList', JSON.stringify(foodAndCalorieList));
   showList();
 }
@@ -131,8 +128,7 @@ document.querySelector('.save-list').addEventListener('click', () => {
 document.querySelector('.goal-calorie-button').addEventListener('click', () => {
   goalCalorie = Number(document.querySelector(".goal-calorie").value);
   updateDonut(0, goalCalorie);
-  document.querySelector(".goal-calorie").value = "";
 });
 
 showList();
-updateDonut(0, 2000); // show default value for calorie
+updateDonut(0, 5000);

@@ -37,7 +37,6 @@
   transition: transform 0.2s ease;
   display: grid;
   grid-template-columns: 300px 1fr;
-  color: rgb(45, 87, 44);
 }
 
 .meal:hover{
@@ -61,4 +60,10 @@
   height: auto;
   object-fit: cover;
   display: block;
+}
+
+@media(max-width: 1000px){
+  .recipe-list{
+    grid-template-columns: 1fr 1fr;
+  }
 }
