@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Calorie tracker</title>
-        <link rel="stylesheet" href="css-files/info-page.css">
-        <link rel="stylesheet" href="css-files/header-sidebar.css">
-        <link rel="stylesheet" href="css-files/api-recipe-search.css">
+        <title>Info Page</title>
+
+        <link rel = "stylesheet" href = "css-files/general.css">
+        <link rel = "stylesheet" href = "css-files/info-page.css">
+        <link rel = "stylesheet" href = "css-files/header-sidebar.css">
+        <link rel = "stylesheet" href = "css-files/api-recipe-search.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <script src="scripts/search-bar.js" defer></script>
-        <script src = "scripts/api-recipe-search.js" defer></script>
+
     </head>
+
     <body>
         <div class="header">
             <img class="hamburger-icon" src= "pictures/hamburger-icon.png">
             <div class="title">Calorie Tracker - Your Health Assistant!</div>
         </div>
+
         <!--Sidebar for user to choose pages-->
         <div class="sidebar">
+            
             <div class="navigation">
                 <a href ="home-page.html">
                 <img class="icon" src="pictures/home-icon.png" alt="icon">
                 </a>
             </div>
+
             <div class="navigation">
                 <a href ="info-page.html">
                 <img class="icon" src="pictures/info-icon.png" alt="icon">
                 </a>
             </div>
+
             <div class="navigation">
                 <a href ="about-page.html">
                 <img class="icon" src="pictures/about-icon.png" alt="icon">
                 </a>
             </div>
+
         </div>
+
         <div class="content">
             <!--Banner advertisements HTML-->
             <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>        
-                    <img class="advertisement" src = "pictures/banner-1.png">
-                    <div class="text">News 1</div> 
-                </div>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>        
+                <img class="advertisement" src = "pictures/banner-1.png">
+                <div class="text">News 1</div> 
+            </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>        
-                    <img class="advertisement" src = "pictures/banner-2.png">
-                    <div class="text">News 2</div> 
-                </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>        
+                <img class="advertisement" src = "pictures/banner-2.png">
+                <div class="text">News 2</div> 
+            </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>        
-                    <img class="advertisement" src = "pictures/banner-3.png">
-                    <div class="text">News 3</div> 
-                </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>        
+                <img class="advertisement" src = "pictures/banner-3.png">
+                <div class="text">News 3</div> 
+            </div>
 
-                <a class="prev">❮</a>
-                <a class="next">❯</a>
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
 
             </div>
 
@@ -66,91 +76,65 @@
                 <span class="dot"></span> 
                 <span class="dot"></span> 
             </div>
-            <div class="intro">
-                <h1>Find your food's nutrition information here</h1>
-                <p>Knowing nutrition of your food may help you for a better food choice</p><br>
-            </div>
 
-            <div class="search-wrapper">            
-                <label for="search">Search :</label>
-                <input id="search" placeholder="food name..." class="search">
-            </div>
-
-            <div class="content-info"></div>
-                
-            <div class="card-container">
+            <!--This is the food nutrition finder-->
+            <div class = "search-wrapper-container">
+                <div class="search-wrapper">
+                    <h1 class = "info-title">Calorie Finder</h1>
+                    <div></div>
                     
+                    <!--User type in here to find desired food-->
+                    <input id= "search" placeholder= "Type food name here" class= "search-food" autocomplete="off">
+                    <button class = "search-food-calorie-button">Enter</button>
+                </div>
+                <div class="info-content">
+                    <!--Retrieved info from API will be displayed here-->
+                    <h1 class = "sample-message">Result is displayed here!</h1>
+                </div>    
+            </div>
+
+            <!--This is hover card feature-->
+                <div class = "total-card-container">
+                    <h1 class = "info-title">Hover here to find out more!</h1>
+                    <div class="card-container">
+                        
                     <div class="card">
                         <div class="front" id="b1">
-                            <h1>Carb<br>🥖</h1>
+                            <h1>Carbs<br>🥖</h1>
                         </div>
                         <div class="back">
-            <ul>
-        <ul><b>✅ Function:</b> <br>
-            <li>Primary energy source for the body and brain. </li>
-            <li>Stored as glycogen in muscles and liver. </li>
-        </ul><br>
-        
-        <ul><b>🍽️ Calories:</b> <br>
-            <li>1 gram = 4 calories </li>
-        </ul><br>
-
-        <ul><b>✅ Types:</b> <br>
-            <li>Simple carbs (sugar): quick energy, spike blood sugar.</li>
-            <li>Complex carbs (fiber, starch): slow-digesting, long-term energy.</li>
-        </ul><br>
-            </ul>
+                            <p class = "description">
+                            <strong>✅ Function:</strong>
+                            <br>
+                            Primary energy source for the body and brain. It is stored as glycogen in muscles and liver. It consists of simple carbs such as sugar and complex carbs such as starch.
+                            </p>
                         </div>
                     </div>
-                
+                    
                     <div class="card">
                         <div class="front" id="b2">
                             <h1>Fat <br>🧈</h1>
                         </div>
-                        <div class="back" >
-                            <p>
-            <ul>
-        <ul><b>✅ Function:</b> <br>
-                <li>Long-term energy storage.</li>
-                <li>Helps absorb fat-soluble vitamins (A, D, E, K).</li>
-                <li>Insulates and protects organs.</li>
-                <li>Essential for hormone production.</li>
-        </ul><br>
-
-        <ul><b>🍽️ Calories:</b> <br>
-                <li>1 gram = 9 calories (more than double carbs or protein)</li>
-        </ul><br>
-
-        <ul><b>✅ Types:</b> <br>
-                <li>Healthy fats: unsaturated (e.g. olive oil, nuts).</li>
-                <li>Unhealthy fats: saturated, trans fats (limit intake).</li>
-        </ul><br>
-            </ul>
-
+                        <div class="back">
+                            <p class = "description">
+                            <strong>✅ Function:</strong>
+                            <br>
+                            Long-term energy storage. It is stored as glycogen in muscles and liver and helps absorb fat-soluble vitamins (A, D, E, K). It also acts as insulator and protects the organs.
+                            </p>
                         </div>
                     </div>
-                
+                    
                     <div class="card">
                         <div class="front" id="b3">
                             <h1>Fiber<br>🌿</h1>
                         </div>
                         <div class="back" >
-                            <p>
-            <ul>
-        <ul><b>✅ Function:</b> <br>
-            <li>Type of carbohydrate that cannot be digested.</li>
-            <li>Does not provide calories directly, but:</li>
-            <li>Helps with digestion and bowel movement.</li>
-            <li>Feeds gut bacteria (which indirectly supports metabolism).</li>
-            <li>Slows sugar absorption → steady energy levels.</li>
-        </ul><br>
-
-        <ul><b>🍽️ Calories:</b> <br>
-            <li>Insoluble fiber: 0 calories.</li>
-            <li>Soluble fiber: ~1–2 calories per gram (fermented in colon).</li>
-        </ul><br>
-            </ul>
-
+                            <p class = "description">
+                            <strong>✅ Function:</strong>
+                            <br>
+                            Type of carbohydrate that cannot be digested. It does not provide calories directly but
+                            helps with digestion and bowel movement. It also feeds gut bacteria which indirectly supports metabolism's rate.
+                            </p>
                         </div>
                     </div>
 
@@ -159,38 +143,36 @@
                             <h1>Sugar <br>🍭</h1>
                         </div>
                         <div class="back">
-            <ul>
-        <ul><b>✅ Function:</b> <br>
-            <li>A simple carbohydrate.</li>
-            <li>Provides quick energy.</li>
-            <li>Found naturally (fruits, milk) and added (soda, candy).</li>
-        </ul><br>
-
-        <ul><b>🍽️ Calories:</b> <br>
-            <li>1 gram = 4 calories</li>
-        </ul><br>
-
-        <ul><b>⚠️ Note:</b> <br>
-            <li>Too much sugar → weight gain, insulin resistance, diabetes risk.</li>
-            <li>Added sugars should be limited to &lt; 10% of daily calories (~36g for men).</li>
-        </ul><br>
-            </ul>
+                            <p class = "description">
+                            <strong>✅ Function:</strong>
+                            <br>
+                            A simple carbohydrate. It provides quick energy and are found naturally in fruits or added artificially in processed food.
+                            However, high sugar intake could cause weight gain and diabetes risk.
+                            </p>    
                         </div>
-                    </div>            
-                    
-                </div>       
-                <!--This is HTML Structure for Recipes Suggestion-->
-                <div class = "recipe-suggestion">
-                    <h1 class = "recipe-header">
-                    Get Your Recipes Here! Click on The Pics for Videos!
-                    </h1>
-                    <input type = "text" placeholder = "Enter food name" class = "recipe-name-input">
-                    <button class = "search-recipe-button">
-                    Enter
-                    </button>
-                    <div class = "recipe-list"></div> 
+                    </div>    
                 </div>
-</div>
-    <script src = "scripts/header-sidebar.js"></script>
+            </div>
+                                
+            
+            <!--This is HTML Structure for Recipes Suggestion-->
+        <div class = "recipe-suggestion">
+            <h1 class = "recipe-header">
+                Get Your Recipes Here! Click on The Pics for Videos!
+            </h1>
+            <div></div>
+            <input type = "text" placeholder = "Enter food name" class = "recipe-name-input">
+            <button class = "search-recipe-button">
+                Enter
+            </button> 
+        </div>
+        <div class = "recipe-list"></div>
+
+    </div>
+
+        <script src = "scripts/info-page.js" defer></script>
+        <script src = "scripts/header-sidebar.js"></script>
+        <script src = "scripts/api-recipe-search.js"></script>       
+    
     </body>
 </html>

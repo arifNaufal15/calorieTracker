@@ -1,18 +1,25 @@
 .recipe-suggestion{
-  margin-top: 30px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 150px; 
+  gap: 20px;
 }
 
 .recipe-header{
   font-size: 1.2rem;
-  padding: 10px 10px 10px 0;
+  margin: 0;
 }
 
 .recipe-name-input{
   border: none;
   border-radius: 10px;
-  width: 300px;
+  width: auto;
   height: 40px;
   padding-left: 5px;
+  background-color: #CCF6CC;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -25,7 +32,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Responsive columns */
   gap: 20px; /* Space between grid items */
-  padding: 20px;
+  margin-top: 20px;
 }
 
 .meal{
@@ -36,8 +43,7 @@
   text-align: center;
   transition: transform 0.2s ease;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  color: rgb(45, 87, 44);
+  grid-template-columns: 1fr 1fr;
 }
 
 .meal:hover{
