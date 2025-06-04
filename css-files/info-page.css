@@ -30,11 +30,12 @@
     gap: 20px;
     background: white;
     backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .info-content{
     background-color: white;
-    margin: 20px 0 0 30px;
+    margin: 20px 0 0 20px;
     padding: 30px;
     border-radius: 20px;
     display: none;
@@ -42,6 +43,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
+    column-gap: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .card{
@@ -61,6 +64,7 @@
     padding: 30px;
     display: grid;
     grid-template-rows: 1fr;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .card-container{

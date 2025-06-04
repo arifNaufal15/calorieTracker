@@ -16,6 +16,7 @@ document.querySelector(".search-food-calorie-button").addEventListener('click', 
 });
 
 //when user press Enter key to find desired
+/*
 document.addEventListener("keydown", async event => {
     
     if(event.key === "Enter"){
@@ -24,7 +25,7 @@ document.addEventListener("keydown", async event => {
         display(food);
     }
 })
-
+*/
 async function getFood(userInput){
 
     const responses = await fetch(`https://api.api-ninjas.com/v1/nutrition?query=${encodeURIComponent(userInput)}`,
@@ -43,7 +44,7 @@ async function getFood(userInput){
     if (!userInput) {
         alert("Please type the food name first!");
         return;
-    } else if (!data){
+    } else if (data.length === 0) {
         alert("The food you've searched is not available!");
         return;
     }
