@@ -64,3 +64,32 @@
 .item-label{
   font-weight: 700;
 }
+
+@media(max-width: 550px){
+  .calculator-container{
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-header{
+    margin-bottom: 0px;
+  }
+
+  #gender, #age, #weight, #height, #activity-level{
+    width: 100%;
+  }
+
+  .save-result{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+  }
+
+  .result{
+    grid-column: span 2;
+    margin-top: 0;;
+  }
+
+  #calculate-button, .save-result-button{
+    width: 90%;
+  }
+}
