@@ -152,6 +152,10 @@
         grid-template-columns: 1fr;
     }
 
+    .search-food{
+        width: 100%;
+    }
+
     .info-content{
         margin: 20px 0 0 0;
     }
@@ -159,5 +163,11 @@
     .card-container{
         grid-template-columns: 1fr 1fr;
         row-gap: 10px;
+        height: 700px;
+        padding: 10px 0;
+    }
+
+    .description{
+        font-size: 11px;
     }
 }
