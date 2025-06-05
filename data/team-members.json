@@ -4,27 +4,27 @@
         "matric": "243188",
         "email": "ariffizham0307@gmail.com",
         "bio": "Loves coding and cats.",
-        "img": "pictures/sample-profile-pic.jpg"
+        "img": "pictures/profile-pic-izham.jpg"
     },
     "2": {
         "name": "Muhammad Fahim Izani",
         "matric": "243345",
         "email": "fahim@example.com",
         "bio": "Avid reader and debate enthusiast.",
-        "img": "pictures/sample-profile-pic.jpg"
+        "img": "pictures/profile-pic-fahim.jpg"
     },
     "3": {
         "name": "Muhammad Irshad",
         "matric": "243752",
         "email": "irshad@example.com",
         "bio": "Enjoys hiking and mosque.",
-        "img": "pictures/sample-profile-pic.jpg"
+        "img": "pictures/profile-pic-irshad.jpg"
     },
     "4": {
         "name": "Muhammad Arif Naufal",
         "matric": "243179",
         "email": "naufal@example.com",
         "bio": "Passionate about music and design.",
-        "img": "pictures/sample-profile-pic.jpg"
+        "img": "pictures/profile-pic-naufal.jpg"
     }
 }
