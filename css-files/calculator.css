@@ -86,7 +86,7 @@
 
   .result{
     grid-column: span 2;
-    margin-top: 0;;
+    margin-top: 0;
   }
 
   #calculate-button, .save-result-button{

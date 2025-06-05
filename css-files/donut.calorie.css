@@ -54,3 +54,25 @@ circle {
   font-weight: bold;
   font-size: 30px;
 }
+
+@media(max-width: 550px){
+  .goal-calorie-info{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .donut-wheel-container{
+    flex-direction: column;
+  }
+
+  .donut-wheel-container svg{
+    margin: 0 auto;
+  }
+
+  .center-label{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  
+}
