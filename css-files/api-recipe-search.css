@@ -69,3 +69,13 @@
   object-fit: cover;
   display: block;
 }
+
+@media(max-width: 550px){
+  .recipe-suggestion{
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-list{
+    grid-template-columns: 1fr;
+  }
+}

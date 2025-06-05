@@ -26,7 +26,6 @@
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 150px;
-    flex-direction: column;
     gap: 20px;
     background: white;
     backdrop-filter: blur(10px);
@@ -141,4 +140,24 @@
 
 #b4{
     background:radial-gradient(circle, darkseagreen, #1e9f22);
+}
+
+@media(max-width: 550px){
+    .search-wrapper-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .search-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .info-content{
+        margin: 20px 0 0 0;
+    }
+
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    }
 }
