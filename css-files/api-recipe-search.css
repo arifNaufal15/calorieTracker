@@ -75,6 +75,10 @@
     grid-template-columns: 1fr;
   }
 
+  .recipe-name-input{
+    width: 100%;
+  }
+
   .recipe-list{
     grid-template-columns: 1fr;
   }
