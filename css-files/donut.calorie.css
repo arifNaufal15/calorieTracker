@@ -56,6 +56,10 @@ circle {
 }
 
 @media(max-width: 550px){
+  .goal-calorie{
+    width: 100%;
+  }
+  
   .goal-calorie-info{
     grid-template-columns: 1fr;
     row-gap: 20px;
