@@ -1,15 +1,15 @@
-let slideIndex = 1;
+let slideIndex = 1; // 
 showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+function currentSlide(n) { //
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n) { //display slides 
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
@@ -27,7 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-function toggleSidebar() {
+function toggleSidebar() {  // open sidebar flexibly button
   const sidebar = document.querySelector(".sidebar");
   const content = document.querySelector(".content");
 
@@ -46,19 +46,19 @@ const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
 const dotButton = document.querySelectorAll(".dot");
 
-hamburgerIcon.addEventListener('click', () => {
+hamburgerIcon.addEventListener('click', () => { 
   toggleSidebar();
 });
 
-prevButton.addEventListener('click', () => {
+prevButton.addEventListener('click', () => { //previous button
   plusSlides(-1);
 });
 
-nextButton.addEventListener('click', () => {
+nextButton.addEventListener('click', () => { //nextslides button
   plusSlides(1);
 });
 
-dotButton.forEach ((dot, index) => {
+dotButton.forEach ((dot, index) => {  
   dot.addEventListener('click', () => {
     currentSlide(index + 1);
   });
