@@ -156,6 +156,7 @@ iframe {
     display: none;
 }
 
+/* for smaller screens */
 @media (max-width: 550px) {
     .personal-info-container {
         flex-direction: column;

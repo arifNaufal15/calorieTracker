@@ -3,6 +3,7 @@ const overlay = document.getElementById('popup-overlay');
 const popupContent = document.getElementById('popup-content');
 const popupClose = document.getElementById('popup-close');
 
+//fetch data from json
 fetch("data/team-members.json")
     .then(response => response.json())
     .then(data => {
@@ -17,12 +18,14 @@ fetch("data/team-members.json")
             const id = card.getAttribute('data-id');
             const person = peopleData[id];
 
+            //display members data
             if (person) {
                     card.innerHTML =
                         `<img src="${person.img}" alt="${person.name}" class = "profile-photo"><br><br>
                         <p>${person.name}</p>`;
             }
 
+            //display popup
             card.addEventListener('click', () => {
                 if (person) {
                     popupContent.innerHTML =
@@ -38,10 +41,12 @@ fetch("data/team-members.json")
         });
     })
 
+//close popup when close button is clicked
 popupClose.addEventListener('click', () => {
     overlay.classList.add('hidden');
 });
 
+//close popup when overlay is clicked
 overlay.addEventListener('click', (e) => {
     if (e.target === overlay) {
         overlay.classList.add('hidden');
